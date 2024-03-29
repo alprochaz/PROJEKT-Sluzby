@@ -1,0 +1,215 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #FAFAFA;
+	color: #8B8B8B;
+
+}
+
+main {
+	margin: 60px 20px;
+}
+
+section {
+	margin-bottom: 60px;
+}
+
+.picture {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.traveler {
+	display: block;
+	max-width: 100%;
+	
+}
+
+h1, h2 {
+	color: black;
+	text-align: center;
+	font-weight: 500; /*medium*/
+}
+
+h1 {
+	font-size: 28px;
+	margin: 40px 0px 10px 0px;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+.cara {
+	border-top: 2px solid #407BFF;	
+	width: 60px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.text-center {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.button1,
+.button2 {
+	display: block;
+	margin: 10px auto;
+	padding: 10px 30px;
+	border-radius: 20px;
+	border: 0px;
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Montserrat", sans-serif;
+	background-color: #407BFF;
+}
+
+.button2 {
+	background-color: #8B8B8B;
+}
+
+.karta {
+	padding: 20px;
+	margin-bottom: 15px;
+	font-size: 13px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 4px 6px #407BFF1F;
+	
+	display: flex;
+	column-gap: 30px;
+}
+
+
+
+/*---------TABLET-----------------*/
+@media screen and (min-width: 640px) {
+	section {
+		margin-bottom: 80px;
+	}
+
+	.picture {
+		max-width: 400px;
+	}
+
+	h1 {
+		margin-top: 30px;
+	}
+	.buttony {
+		display: flex;
+		justify-content: center;
+		column-gap: 20px;
+	}
+
+	.button1,
+	.button2 {
+		margin: 0px;
+	}
+
+	.text-center {
+		padding-inline: 100px;
+	}
+
+	.karty {
+		display: flex;
+		column-gap: 20px;
+	}
+	
+	.karta {
+		flex-basis: calc(100% / 3);
+		display: block;
+		padding: 40px 15px;
+	}
+
+	.karta img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.karta p {
+		text-align: center;
+		margin: 20px 0 0 0;
+	}
+
+}
+
+/*-------------PC-----------------*/
+@media screen and (min-width: 1100px) {
+	main {
+		margin: 60px 80px;
+	}
+
+	.kontejner1,
+	.kontejner2,
+	.kontejner3 {
+		max-width: 1040px;
+		display: flex;
+		justify-content: space-between;
+		column-gap: 60px;
+		margin-inline:  auto;
+	}
+
+	.picture,
+	.hero {
+		flex-basis: 490px;
+	}
+
+	.picture {
+		max-width: 425px;
+		margin: 0;
+		order: 2;
+		flex-grow: 1;
+		/* border: 1px solid blue; */
+	}
+
+	.traveler {
+		margin: 0 auto; /* obrazek nechce byt ve stredu sve poloviny ????*/
+	}
+
+	.hero {
+		order: 1;
+		margin-top: 40px;
+	}
+
+	h1, h2 {
+		text-align: left;
+	}
+
+	.cara {
+		margin-left: 0;
+	}
+
+	.text-center {
+		padding-inline: 0px;
+		text-align: left;
+	}
+
+	.buttony {
+		justify-content: flex-start;
+	}
+
+	.karty {
+		flex-basis: 550px;
+	}
+
+	.sluzby1, 
+	.sluzby2 {
+		flex-basis: 430px;
+	}
+
+	.sluzby1 {
+		order: 2;
+	}
+
+	.karty1 {
+		order: 1;
+	}
+
+}
