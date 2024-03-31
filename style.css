@@ -20,14 +20,13 @@ section {
 }
 
 .picture {
-	max-width: 350px;
-	margin: 0 auto;
+	width: 100%;
 }
 
 .traveler {
+	max-width: 350px;
+	margin: 0 auto;
 	display: block;
-	max-width: 100%;
-	
 }
 
 h1, h2 {
@@ -95,7 +94,7 @@ h2 {
 		margin-bottom: 80px;
 	}
 
-	.picture {
+	.traveler {
 		max-width: 400px;
 	}
 
@@ -162,15 +161,11 @@ h2 {
 	}
 
 	.picture {
-		max-width: 425px;
-		margin: 0;
 		order: 2;
-		flex-grow: 1;
-		/* border: 1px solid blue; */
 	}
-
+	
 	.traveler {
-		margin: 0 auto; /* obrazek nechce byt ve stredu sve poloviny ????*/
+		max-width: 425px;
 	}
 
 	.hero {
